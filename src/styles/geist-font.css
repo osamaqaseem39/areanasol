@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('/Geist/static/Geist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/Geist/static/Geist-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/Geist/static/Geist-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+.font-geist {
+  font-family: 'Geist', Arial, sans-serif;
+} 
