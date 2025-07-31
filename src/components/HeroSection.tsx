@@ -60,13 +60,11 @@ export function HeroSection() {
           </p>
         </div>
 
-        {/* Mobile Image */}
-        <div className="w-full flex justify-center mb-6">
-          <img
-            src="/images/allcharactershalf.png"
-            alt="Arena SOL Characters"
-            className="w-full max-w-sm h-auto object-contain"
-          />
+        {/* Mobile 3D Characters */}
+        <div className="w-full flex justify-center mb-6 overflow-hidden">
+          <div className="w-full max-w-sm h-[300px] flex items-center justify-center">
+            <Character3DViewer modelPath="/images/3dcharaters/character1/Pbr/base_basic_pbr.glb" />
+          </div>
         </div>
 
         {/* Mobile Content */}

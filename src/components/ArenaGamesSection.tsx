@@ -110,11 +110,7 @@ const ArenaGamesSection = () => {
             {games.map((game, idx) => (
               <div
                 key={idx}
-                className={`relative w-full h-[12rem] border border-white/20 rounded-lg flex flex-col justify-end overflow-hidden shadow-lg hover:scale-105 transition-all duration-700 ease-out ${
-                  animatedCards[idx] 
-                    ? 'translate-y-0 opacity-100' 
-                    : 'translate-y-16 opacity-0'
-                }`}
+                className="relative w-full h-[12rem] border border-white/20 rounded-lg flex flex-col justify-end overflow-hidden shadow-lg hover:scale-105 transition-all duration-700 ease-out translate-y-0 opacity-100"
                 style={{
                   transitionDelay: `${idx * 200}ms`
                 }}

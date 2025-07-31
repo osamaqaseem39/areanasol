@@ -35,36 +35,44 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
     pointLight.position.set(0, 10, 0);
     scene.add(pointLight);
 
-    // Camera position
-    camera.position.z = 4; // Moved closer from 5 to 3 for zoom effect
-    camera.position.y = 0.5;   // Move camera down to center the view
-    camera.position.x = 0;
+                                                                                                                       // Universal mobile settings
+        const isMobile = window.innerWidth < 768;
+        const cameraZ = isMobile ? 5 : 6;
+        const cameraY = isMobile ? 0 : 0; // Center camera vertically
+        const characterScale = isMobile ? 1.5 : 2.5;
+        const orbitalRadius = isMobile ? 1 : 2;
 
-    // Load the 3D models
-    const loader = new GLTFLoader();
-    const models: THREE.Group[] = [];
+     // Camera position
+     camera.position.z = cameraZ;
+     camera.position.y = cameraY;
+     camera.position.x = 0;
+
+     // Load the 3D models
+     const loader = new GLTFLoader();
+     const models: THREE.Group[] = [];
     
-    // Load character1 model (left side)
-    loader.load(
-      "/images/3dcharaters/character1/Pbr/base_basic_pbr.glb",
-      (gltf) => {
-        console.log("Character1 model loaded successfully");
-        const model = gltf.scene;
+         // Load character1 model (left side)
+     loader.load(
+       "/images/3dcharaters/character1/Pbr/base_basic_pbr.glb",
+       (gltf) => {
+         console.log("Character1 model loaded successfully");
+         const model = gltf.scene;
+         
+         // Center the model
+         const box = new THREE.Box3().setFromObject(model);
+         const center = box.getCenter(new THREE.Vector3());
+         model.position.sub(center);
+         
+         // Scale the model to fit nicely
+         const size = box.getSize(new THREE.Vector3());
+         const maxDim = Math.max(size.x, size.y, size.z);
+         const scale = characterScale / maxDim;
+         model.scale.setScalar(scale);
         
-        // Center the model
-        const box = new THREE.Box3().setFromObject(model);
-        const center = box.getCenter(new THREE.Vector3());
-        model.position.sub(center);
-        
-        // Scale the model to fit nicely
-        const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 2.5 / maxDim; // Increased from 1.5 to 2.5 to make characters taller
-        model.scale.setScalar(scale);
-        
-        // Position character1 on the left side
-        model.position.x = -2;
-        model.position.z = 0;
+                                                                       // Position character1 on the left side
+           model.position.x = -2;
+           model.position.z = 0;
+           model.position.y = -0.5; // Bring characters a bit lower
         scene.add(model);
         models.push(model);
         
@@ -79,27 +87,28 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
       }
     );
     
-    // Load character2 model (right side)
-    loader.load(
-      "/images/3dcharaters/character2/Pbr/base_basic_pbr.glb",
-      (gltf) => {
-        console.log("Character2 model loaded successfully");
-        const model = gltf.scene;
+                   // Load character2 model (right side)
+      loader.load(
+        "/images/3dcharaters/character2/Pbr/base_basic_pbr.glb",
+        (gltf) => {
+          console.log("Character2 model loaded successfully");
+          const model = gltf.scene;
+          
+          // Center the model
+          const box = new THREE.Box3().setFromObject(model);
+          const center = box.getCenter(new THREE.Vector3());
+          model.position.sub(center);
+          
+          // Scale the model to fit nicely
+          const size = box.getSize(new THREE.Vector3());
+          const maxDim = Math.max(size.x, size.y, size.z);
+          const scale = characterScale / maxDim;
+          model.scale.setScalar(scale);
         
-        // Center the model
-        const box = new THREE.Box3().setFromObject(model);
-        const center = box.getCenter(new THREE.Vector3());
-        model.position.sub(center);
-        
-        // Scale the model to fit nicely
-        const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 2.5 / maxDim;
-        model.scale.setScalar(scale);
-        
-        // Position character2 on the right side
-        model.position.x = 2;
-        model.position.z = 0;
+                                                                       // Position character2 on the right side
+           model.position.x = 2;
+           model.position.z = 0;
+           model.position.y = -0.5; // Bring characters a bit lower
         scene.add(model);
         models.push(model);
         
@@ -114,27 +123,28 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
       }
     );
     
-    // Load character3 model (front side)
-    loader.load(
-      "/images/3dcharaters/character3/Pbr/base_basic_pbr.glb",
-      (gltf) => {
-        console.log("Character3 model loaded successfully");
-        const model = gltf.scene;
+                   // Load character3 model (front side)
+      loader.load(
+        "/images/3dcharaters/character3/Pbr/base_basic_pbr.glb",
+        (gltf) => {
+          console.log("Character3 model loaded successfully");
+          const model = gltf.scene;
+          
+          // Center the model
+          const box = new THREE.Box3().setFromObject(model);
+          const center = box.getCenter(new THREE.Vector3());
+          model.position.sub(center);
+          
+          // Scale the model to fit nicely
+          const size = box.getSize(new THREE.Vector3());
+          const maxDim = Math.max(size.x, size.y, size.z);
+          const scale = characterScale / maxDim;
+          model.scale.setScalar(scale);
         
-        // Center the model
-        const box = new THREE.Box3().setFromObject(model);
-        const center = box.getCenter(new THREE.Vector3());
-        model.position.sub(center);
-        
-        // Scale the model to fit nicely
-        const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 2.5 / maxDim;
-        model.scale.setScalar(scale);
-        
-        // Position character3 in front
-        model.position.x = 0;
-        model.position.z = -2;
+                                                                       // Position character3 in front
+           model.position.x = 0;
+           model.position.z = -2;
+           model.position.y = -0.5; // Bring characters a bit lower
         scene.add(model);
         models.push(model);
         
@@ -149,27 +159,28 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
       }
     );
     
-    // Load character4 model (back side)
-    loader.load(
-      "/images/3dcharaters/character4/Pbr/base_basic_pbr.glb",
-      (gltf) => {
-        console.log("Character4 model loaded successfully");
-        const model = gltf.scene;
+                   // Load character4 model (back side)
+      loader.load(
+        "/images/3dcharaters/character4/Pbr/base_basic_pbr.glb",
+        (gltf) => {
+          console.log("Character4 model loaded successfully");
+          const model = gltf.scene;
+          
+          // Center the model
+          const box = new THREE.Box3().setFromObject(model);
+          const center = box.getCenter(new THREE.Vector3());
+          model.position.sub(center);
+          
+          // Scale the model to fit nicely
+          const size = box.getSize(new THREE.Vector3());
+          const maxDim = Math.max(size.x, size.y, size.z);
+          const scale = characterScale / maxDim;
+          model.scale.setScalar(scale);
         
-        // Center the model
-        const box = new THREE.Box3().setFromObject(model);
-        const center = box.getCenter(new THREE.Vector3());
-        model.position.sub(center);
-        
-        // Scale the model to fit nicely
-        const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 2.5 / maxDim;
-        model.scale.setScalar(scale);
-        
-        // Position character4 in back
-        model.position.x = 0;
-        model.position.z = 2;
+                                                                       // Position character4 in back
+           model.position.x = 0;
+           model.position.z = 2;
+           model.position.y = -0.5; // Bring characters a bit lower
         scene.add(model);
         models.push(model);
         
@@ -194,10 +205,10 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
           // Individual rotation
           model.rotation.y += 0.01;
           
-          // Orbital revolution
-          const time = Date.now() * 0.001;
-          const radius = 2;
-          const speed = 0.5;
+                                           // Orbital revolution
+            const time = Date.now() * 0.001;
+            const radius = orbitalRadius;
+            const speed = 0.5;
           const angle = (index * Math.PI / 2) + (time * speed); // 0°, 90°, 180°, 270°
           model.position.x = Math.cos(angle) * radius;
           model.position.z = Math.sin(angle) * radius;
