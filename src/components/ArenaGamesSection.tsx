@@ -11,6 +11,7 @@ const games = [
     subtitle: 'Optimized for Mobile Only',
     image: '/images/solshooter.jpeg',
     comingSoon: false,
+    link: 'https://solshooter.arenasol.fun/',
   },
   {
     title: 'CASINO',
@@ -110,9 +111,16 @@ const ArenaGamesSection = () => {
             {games.map((game, idx) => (
               <div
                 key={idx}
-                className="relative w-full h-[12rem] border border-white/20 rounded-lg flex flex-col justify-end overflow-hidden shadow-lg hover:scale-105 transition-all duration-700 ease-out translate-y-0 opacity-100"
+                className={`relative w-full h-[12rem] border border-white/20 rounded-lg flex flex-col justify-end overflow-hidden shadow-lg hover:scale-105 transition-all duration-700 ease-out translate-y-0 opacity-100 ${
+                  game.link ? 'cursor-pointer' : ''
+                }`}
                 style={{
                   transitionDelay: `${idx * 200}ms`
+                }}
+                onClick={() => {
+                  if (game.link) {
+                    window.open(game.link, '_blank');
+                  }
                 }}
               >
                 <div className="absolute inset-0 z-0">
@@ -154,9 +162,16 @@ const ArenaGamesSection = () => {
                 animatedCards[idx] 
                   ? 'translate-y-0 opacity-100' 
                   : 'translate-y-16 opacity-0'
+              } ${
+                game.link ? 'cursor-pointer' : ''
               }`}
               style={{
                 transitionDelay: `${idx * 300}ms`
+              }}
+              onClick={() => {
+                if (game.link) {
+                  window.open(game.link, '_blank');
+                }
               }}
             >
               <div className="absolute inset-0 z-0">
