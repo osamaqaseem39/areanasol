@@ -1,8 +1,9 @@
 import React from 'react';
+import FooterCommunitySection from './FooterCommunitySection';
 
 const ArenaPowerUpSection = () => {
   return (
-    <section className="w-full flex justify-center items-center mb-12 py-12 md:py-20">
+    <section className="w-full flex flex-col justify-center items-center pt-12 md:pt-20">
       <div className="flex flex-col md:flex-row w-full items-center justify-center bg-[#FFFFFF]/30 rounded-[2.5rem] px-4 py-8 md:py-14 md:px-12 gap-8 md:gap-12 max-w-7xl  shadow-2xl">
         {/* Left: Icon, text, button */}
         <div className="flex flex-col items-center flex-1 min-w-[320px] max-w-md text-center">
@@ -39,6 +40,8 @@ const ArenaPowerUpSection = () => {
           </div>
         </div>
       </div>
+      
+      <FooterCommunitySection/>
     </section>
   );
 };

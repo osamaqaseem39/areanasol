@@ -91,7 +91,7 @@ const ArenaGamesSection = () => {
 
   return (
     <section
-      className="w-full min-h-screen flex flex-col items-center justify-center py-16 relative overflow-hidden "
+      className="w-full min-h-screen flex flex-col items-center justify-center pt-16 relative overflow-hidden "
       style={{ backgroundImage: "url('/images/background.png')" }}
     >
       {/* Overlay gradient for readability */}

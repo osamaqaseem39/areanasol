@@ -5,9 +5,9 @@ import Image from "next/image";
 import './StickyNavGradient.css';
 
 const navLinks = [
-  { label: "WHITEPAPER", href: "#whitepaper" },
-  { label: "TOKENOMICS", href: "#tokenomics" },
-  { label: "ROADMAP", href: "#roadmap" },
+  { label: "WHITEPAPER", href: "/whitepaper" },
+  { label: "TOKENOMICS", href: "/tokenomics" },
+  { label: "ROADMAP", href: "/roadmap" },
 ];
 
 function StickyNav() {
@@ -59,7 +59,9 @@ export function Header() {
       <header className="w-full flex items-center px-12 py-6 bg-transparent relative min-h-[96px]">
         {/* Logo */}
         <div className="flex items-center z-10">
-          <Image src="/images/logo-icon.png" alt="Arenasol Logo" width={96} height={96} />
+          <a href="/">
+            <Image src="/images/logo.png" alt="Arenasol Logo" width={150} height={150} />
+          </a>
         </div>
         {/* Centered Navigation */}
         <div className="flex-1 flex justify-center">

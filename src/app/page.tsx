@@ -8,6 +8,5 @@ export default function Home() {
     <HeroHeader />
     <Marquee />
     <ArenaGamesSection />
-    <FooterCommunitySection />
   </>;
 }
