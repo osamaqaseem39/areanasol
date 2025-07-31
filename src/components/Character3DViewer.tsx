@@ -42,7 +42,7 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
 
     // Load the 3D models
     const loader = new GLTFLoader();
-    const models = [];
+    const models: THREE.Group[] = [];
     
     // Load character1 model (left side)
     loader.load(
@@ -190,7 +190,7 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
       
       // Rotate all models around Y axis and revolve around center
       if (scene.userData.models) {
-        scene.userData.models.forEach((model, index) => {
+        (scene.userData.models as THREE.Group[]).forEach((model: THREE.Group, index: number) => {
           // Individual rotation
           model.rotation.y += 0.01;
           

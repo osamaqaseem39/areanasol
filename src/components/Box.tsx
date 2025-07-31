@@ -21,7 +21,7 @@ const StyledBox = styled.div`
   }
 `;
 
-export const Box = (): JSX.Element => {
+export const Box = (): React.ReactElement => {
   return (
     <StyledBox>
       <div className="rectangle" />
