@@ -4,8 +4,8 @@ import React from 'react';
 
 const FooterCommunitySection = () => {
   return (
-    <div className="w-full py-32 mt-32 flex flex-col items-center  relative z-10 overflow-visible " style={{ backgroundImage: 'url(/images/footerbg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
-        <div className="max-w-7xl w-full mx-auto flex flex-col items-center ">
+    <div className="w-full py-32 mt-32 flex flex-col items-center relative z-10 overflow-visible rounded-t-3xl md:rounded-none" style={{ backgroundImage: 'url(/images/footerbg.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div className="w-full flex flex-col items-center px-4 sm:px-6 md:px-8">
           {/* Back to top */}
           <div className="flex flex-col items-center mb-6 relative z-10">
              <div className="w-8 h-8 flex items-center justify-center mb-1 relative" style={{ filter: 'drop-shadow(0 0 20px #FF8C00)' }}>

@@ -91,19 +91,65 @@ const ArenaGamesSection = () => {
 
   return (
     <section
-      className="w-full min-h-screen flex flex-col items-center justify-center pt-16 relative overflow-hidden "
+      className="w-full min-h-screen flex flex-col items-center justify-center pt-8 md:pt-16 relative overflow-hidden px-4 sm:px-6 md:px-8"
       style={{ backgroundImage: "url('/images/background.png')" }}
     >
       {/* Overlay gradient for readability */}
       <div className="absolute inset-0 bg-[#191B23]/97 z-0" />
       <div className="relative z-10 flex flex-col items-center w-full">
-        <h2 className="font-play text-5xl md:text-7xl font-bold text-white text-center mb-2 tracking-wide">
+        <h2 className="font-play text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white text-center mb-2 tracking-wide">
           ARE YOU READY FOR
         </h2>
-        <h2 className="font-play text-5xl md:text-7xl font-bold text-orange-500 text-center mb-10 tracking-wide">
+        <h2 className="font-play text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-orange-500 text-center mb-6 md:mb-10 tracking-wide">
           ARENA GAMES
         </h2>
-        <div ref={containerRef} className="flex flex-row gap-6 md:gap-14 justify-center mb-16 relative w-full mx-auto" style={{zIndex: 20}}>
+        
+        {/* Mobile Grid Layout */}
+        <div className="block md:hidden w-full mb-8">
+          <div className="grid grid-cols-2 gap-4 w-full">
+            {games.map((game, idx) => (
+              <div
+                key={idx}
+                className={`relative w-full h-[12rem] border border-white/20 rounded-lg flex flex-col justify-end overflow-hidden shadow-lg hover:scale-105 transition-all duration-700 ease-out ${
+                  animatedCards[idx] 
+                    ? 'translate-y-0 opacity-100' 
+                    : 'translate-y-16 opacity-0'
+                }`}
+                style={{
+                  transitionDelay: `${idx * 200}ms`
+                }}
+              >
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src={game.image}
+                    alt={game.title}
+                    className={`absolute inset-0 w-full h-full ${game.title === 'COMING SOON' ? 'object-contain' : 'object-cover'} object-center transition-opacity duration-300`}
+                    draggable={false}
+                  />
+                  <div className="absolute inset-0 bg-black/40 z-10" />
+                </div>
+                <div className="relative z-10 p-3 flex flex-col">
+                  <span className="font-poppins text-sm font-bold text-white mb-1 tracking-wide">
+                    {game.title}
+                  </span>
+                  {game.subtitle && (
+                    <span className="font-poppins text-xs text-gray-300">{game.subtitle}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Mobile Show More Button */}
+          <div className="w-full flex justify-center mt-6">
+            <button className="px-6 py-2 bg-black border-2 border-orange-500 rounded-md text-orange-500 font-bold text-sm shadow-lg hover:bg-orange-500 hover:text-black transition-colors duration-200">
+              SHOW MORE
+            </button>
+          </div>
+        </div>
+        
+                 {/* Desktop Original Layout */}
+         <div ref={containerRef} className="hidden md:flex flex-row gap-6 md:gap-14 justify-center mb-32 relative w-full mx-auto" style={{zIndex: 20}}>
           {games.map((game, idx) => (
             <div
               key={idx}
@@ -136,7 +182,7 @@ const ArenaGamesSection = () => {
               </div>
             </div>
           ))}
-          {/* Pixel-perfect lines and dots overlay */}
+          {/* Pixel-perfect lines and dots overlay - Desktop Only */}
           <div className="pointer-events-none absolute left-0 right-0" style={{top: 'calc(100% + 32px)', height: '120px', zIndex: 30}}>
             <div style={{position: 'absolute', left: 0, right: 0, width: '100%', height: '120px'}}>
               {/* Vertical lines from each card */}
@@ -181,6 +227,7 @@ const ArenaGamesSection = () => {
             </div>
           </div>
         </div>
+        
         {/* Video section below the vertical line */}
         <ArenaVideoSection />
         <ArenaPowerUpSection />
