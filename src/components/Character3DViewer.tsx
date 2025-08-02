@@ -37,8 +37,8 @@ export function Character3DViewer({ modelPath }: { modelPath: string }) {
 
                                                                                                                        // Universal mobile settings
         const isMobile = window.innerWidth < 768;
-        const cameraZ = isMobile ? 5 : 6;
-        const cameraY = isMobile ? 0.5 : 0; // Center camera vertically
+        const cameraZ = isMobile ? 5 : 4;
+        const cameraY = isMobile ? 0.5 : 0.8; // Center camera vertically
         const characterScale = isMobile ? 1.5 : 2.5;
         const orbitalRadius = isMobile ? 1 : 2;
 
