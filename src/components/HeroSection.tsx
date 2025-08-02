@@ -36,7 +36,7 @@ export function HeroSection() {
             Compete, dominate, and extract your winnings — this is where Web3 gaming meets real competition.
           </p>
           <div className="flex gap-8 mt-8">
-            <a href="https://solshooter.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://solshooter.arenasol.fun" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#191825] border border-[#F4822F] text-white font-semibold px-8 py-3 rounded-md shadow-lg hover:bg-[#F4822F] hover:text-[#191825] transition-all focus:outline-none focus:ring-2 focus:ring-[#F4822F]">
                 Play Now
               </button>

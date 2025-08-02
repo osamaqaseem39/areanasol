@@ -13,10 +13,11 @@ const games = [
     comingSoon: false,
     link: 'https://solshooter.arenasol.fun/',
   },
+  
   {
-    title: 'CASINO',
-    subtitle: 'Coming Soon',
-    image: '/images/casino.jpeg',
+    title: 'COMING SOON',
+    subtitle: '',
+    image: '/images/logo-icon.png',
     comingSoon: true,
   },
   {
