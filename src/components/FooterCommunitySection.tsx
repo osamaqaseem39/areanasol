@@ -26,10 +26,10 @@ const FooterCommunitySection = () => {
             <h2 className="text-2xl font-bold text-white mb-4 font-geist">Join the Community</h2>
             {/* Social icons */}
             <div className="flex flex-row gap-10 items-center justify-center mb-2">
-              <a href="#" aria-label="X" className="hover:opacity-80 transition-opacity">
+              <a href="https://x.com/play_arenasol?s=11" target="_blank" rel="noopener noreferrer" aria-label="X" className="hover:opacity-80 transition-opacity">
                 <img src="/images/x.png" alt="X" className="w-14 h-14" />
               </a>
-              <a href="#" aria-label="Instagram" className="hover:opacity-80 transition-opacity">
+              <a href="https://www.instagram.com/play_arenasol/?e=a3ef9de8-edc1-4c1b-ae84-39c7f477f4dc&g=5" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:opacity-80 transition-opacity"> 
                 <img src="/images/instagram.png" alt="Instagram" className="w-14 h-14" />
               </a>
               <a href="#" aria-label="Telegram" className="hover:opacity-80 transition-opacity">
