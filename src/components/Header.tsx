@@ -69,8 +69,8 @@ export function Header() {
             <Image 
               src="/images/logo.png" 
               alt="Arenasol Logo" 
-              width={120} 
-              height={120} 
+              width={100} 
+              height={100} 
               className="w-24 h-24 md:w-[150px] md:h-[150px]"
             />
           </a>
