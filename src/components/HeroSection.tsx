@@ -8,7 +8,7 @@ export function HeroSection() {
       <div className="hidden md:flex flex-col md:flex-row items-center justify-between w-full max-w-[120rem] mx-auto gap-8 px-8" style={{ marginLeft: '100px', marginRight: '100px' }}>
         {/* Left: Text in dark box */}
         <div className="flex-1 max-w-2xl text-left relative rounded-2xl pt-4 pb-8 px-8">
-          <h1 className="font-play text-[100px] font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
+          <h1 className="font-play text-[80px] font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
           <div
             className="font-poppins font-extralight"
             style={{
@@ -22,7 +22,7 @@ export function HeroSection() {
             {/* Optional extra text here */}
           </div>
           <p className="mb-4 text-[#F4822F]">
-            <span className="text-[#F4822F] font-semibold">Arena Studio</span>
+            <span className="text-[#F4822F] poppins-extralight-15 font-normal">Arena Studio</span>
             <span className="poppins-extralight-15 text-white font-normal" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}> is a groundbreaking play-to-earn game on the Solana blockchain, where your skill decides your rewards.</span>
           </p>
           <p className="poppins-extralight-15 mb-2 text-white" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}>
