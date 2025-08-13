@@ -11,7 +11,7 @@ const ArenaVideoSection = () => {
           <div className="flex-shrink-0 border-4 border-black rounded-lg overflow-hidden bg-black order-2 md:order-1 w-full h-full" >
             {/* Replace with <video> if you have a video source */}
             <video
-              src="/images/Arena Studio.mp4"
+              src="/images/Arena Sol.mp4"
               autoPlay
               loop
               muted
