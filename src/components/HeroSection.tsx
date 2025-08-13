@@ -8,7 +8,7 @@ export function HeroSection() {
       <div className="hidden md:flex flex-col md:flex-row items-center justify-between w-full max-w-[120rem] mx-auto gap-8 px-8" style={{ marginLeft: '100px', marginRight: '100px' }}>
         {/* Left: Text in dark box */}
         <div className="flex-1 max-w-2xl text-left relative rounded-2xl pt-4 pb-8 px-8">
-          <h1 className="font-play text-[120px] font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
+          <h1 className="font-play text-[100px] font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
           <div
             className="font-poppins font-extralight"
             style={{
@@ -88,7 +88,7 @@ export function HeroSection() {
 
           {/* Mobile Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href="https://solshooter.arenastudio.fun" target="_blank" rel="noopener noreferrer">
+            <a href="https://solshooter.arenasol.fun" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#191825] border border-[#F4822F] text-white font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-[#F4822F] hover:text-[#191825] transition-all focus:outline-none focus:ring-2 focus:ring-[#F4822F]">
                 Play Now
               </button>
