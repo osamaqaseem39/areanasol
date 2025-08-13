@@ -23,7 +23,7 @@ export function HeroSection() {
           </div>
           <p className="mb-4 text-[#F4822F]">
             <span className="text-[#F4822F]">Arena Studio</span>
-            <span className="poppins-extralight-15 text-white font-normal" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}> is a groundbreaking play-to-earn game on the Solana blockchain, where your skill decides your rewards.</span>
+            <span className="poppins-extralight-15 text-white font-normal" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}> is a groundbreaking play-to-earn game studio on the Solana blockchain, where your skill decides your rewards.</span>
           </p>
           <p className="poppins-extralight-15 mb-2 text-white" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}>
             In every match, players enter a real-time multiplayer arena and stake a set amount of $ARENA tokens into the prize pot.<br />
