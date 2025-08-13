@@ -31,7 +31,7 @@ const geistSans = localFont({
 // If you have Geist Mono, add it similarly, or use a system mono font as fallback
 
 export const metadata: Metadata = {
-  title: "Arena SOL - The Ultimate Gaming Arena",
+          title: "Arena Studio - The Ultimate Gaming Arena",
   description: "Step into the arena and fight for 1v1 Match. Bet $500 worth of $ARENA and join the ultimate gaming experience.",
   icons: {
     icon: '/images/logo-icon.png',

@@ -8,7 +8,7 @@ export function HeroSection() {
       <div className="hidden md:flex flex-col md:flex-row items-center justify-between w-full max-w-[120rem] mx-auto gap-8 px-8" style={{ marginLeft: '100px', marginRight: '100px' }}>
         {/* Left: Text in dark box */}
         <div className="flex-1 max-w-2xl text-left relative rounded-2xl pt-4 pb-8 px-8">
-          <h1 className="font-play text-[120px] font-bold text-[#F4822F] leading-tight mb-4">Arena SOL</h1>
+          <h1 className="font-play text-[120px] font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
           <div
             className="font-poppins font-extralight"
             style={{
@@ -22,7 +22,7 @@ export function HeroSection() {
             {/* Optional extra text here */}
           </div>
           <p className="mb-4 text-[#F4822F]">
-            <span className="text-[#F4822F] font-semibold">Arena SOL</span>
+            <span className="text-[#F4822F] font-semibold">Arena Studio</span>
             <span className="poppins-extralight-15 text-white font-normal" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}> is a groundbreaking play-to-earn game on the Solana blockchain, where your skill decides your rewards.</span>
           </p>
           <p className="poppins-extralight-15 mb-2 text-white" style={{ opacity: 0.7, fontSize: '20px', lineHeight: '28px' }}>
@@ -36,7 +36,7 @@ export function HeroSection() {
             Compete, dominate, and extract your winnings — this is where Web3 gaming meets real competition.
           </p>
           <div className="flex gap-8 mt-8">
-            <a href="https://solshooter.arenasol.fun" target="_blank" rel="noopener noreferrer">
+            <a href="https://solshooter.arenastudio.fun" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#191825] border border-[#F4822F] text-white font-semibold px-8 py-3 rounded-md shadow-lg hover:bg-[#F4822F] hover:text-[#191825] transition-all focus:outline-none focus:ring-2 focus:ring-[#F4822F]">
                 Play Now
               </button>
@@ -56,7 +56,7 @@ export function HeroSection() {
       <div className="md:hidden flex flex-col items-center justify-center w-full px-4 py-8">
         {/* Mobile Header */}
         <div className="w-full text-center mb-6">
-          <h1 className="font-play text-4xl sm:text-6xl font-bold text-[#F4822F] leading-tight mb-4">Arena SOL</h1>
+          <h1 className="font-play text-4xl sm:text-6xl font-bold text-[#F4822F] leading-tight mb-4">Arena Studio</h1>
           <p className="text-white text-sm sm:text-base opacity-90 mb-4">
             A groundbreaking play-to-earn game on the Solana blockchain
           </p>
@@ -88,7 +88,7 @@ export function HeroSection() {
 
           {/* Mobile Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <a href="https://solshooter.arenasol.fun" target="_blank" rel="noopener noreferrer">
+            <a href="https://solshooter.arenastudio.fun" target="_blank" rel="noopener noreferrer">
               <button className="bg-[#191825] border border-[#F4822F] text-white font-semibold px-6 py-3 rounded-md shadow-lg hover:bg-[#F4822F] hover:text-[#191825] transition-all focus:outline-none focus:ring-2 focus:ring-[#F4822F]">
                 Play Now
               </button>

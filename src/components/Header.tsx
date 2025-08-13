@@ -68,7 +68,7 @@ export function Header() {
           <a href="/">
             <Image 
               src="/images/logo.png" 
-              alt="Arenasol Logo" 
+              alt="Arena Studio Logo" 
               width={100} 
               height={100} 
               className="w-24 h-24 md:w-[150px] md:h-[150px]"

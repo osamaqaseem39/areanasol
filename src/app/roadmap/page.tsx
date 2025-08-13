@@ -77,7 +77,7 @@ const RoadmapPage = () => {
               </h2>
               <p className="text-lg md:text-xl text-gray-300 mb-8 font-poppins">
                 Our detailed roadmap is currently under development. 
-                Stay tuned for exciting updates about Arena SOL's future!
+                Stay tuned for exciting updates about Arena Studio's future!
               </p>
               <div className="flex justify-center">
                 <a href="/" className="bg-orange-500 hover:bg-orange-600 text-black font-bold py-3 px-8 rounded-[1.2rem] transition-colors duration-200 font-play text-xl">

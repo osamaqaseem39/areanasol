@@ -11,7 +11,7 @@ const games = [
     subtitle: 'Optimized for Mobile Only',
     image: '/images/solshooter.jpeg',
     comingSoon: false,
-    link: 'https://solshooter.arenasol.fun/',
+            link: 'https://solshooter.arenastudio.fun/',
   },
   
   {

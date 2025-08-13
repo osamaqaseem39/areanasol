@@ -81,26 +81,26 @@ const ComingSoonPage = () => {
                    <div>
                      <h3 className="text-2xl font-bold text-[#F4822F] mb-4 font-geist">Overview</h3>
                      <div className="space-y-4 text-gray-300 font-poppins">
-                       <p>
-                         Arena SOL is the next-generation of the Play-to-Earn (P2E) gaming ecology powered 
-                         by the Solana blockchain and is developed to transform the dynamics between the players, 
-                         digital assets and game rewards. Arena SOL offers players the power they never had in 
-                         traditional games, which are controlled and monetized by a few central authorities, giving the 
-                         players the opportunity to earn real value through their skill, strategy and community 
-                         interaction.
-                       </p>
-                       <p>
-                         On a more basic level, Arena SOL employs the ideology of decentralized finance 
-                         (DeFi) to make in-game economies clear and sustainable. Each match, win, and asset have 
-                         real value, as it is facilitated by its indigenous $ARENA token that is used in transaction, 
-                         rewards, and staking within the platform.
-                       </p>
-                       <p>
-                         We are not only visualizing gameplay, though; Arena SOL will be the home of the 
-                         competition, innovation, and development of the community. Through the high-speed and 
-                         low-cost blockchain infrastructure provided by Solana, we can guarantee smooth gaming 
-                         with features that allow scalability and equitability.
-                       </p>
+                                               <p>
+                          Arena Studio is the next-generation of the Play-to-Earn (P2E) gaming ecology powered 
+                          by the Solana blockchain and is developed to transform the dynamics between the players, 
+                          digital assets and game rewards. Arena Studio offers players the power they never had in 
+                          traditional games, which are controlled and monetized by a few central authorities, giving the 
+                          players the opportunity to earn real value through their skill, strategy and community 
+                          interaction.
+                        </p>
+                                               <p>
+                          On a more basic level, Arena Studio employs the ideology of decentralized finance 
+                          (DeFi) to make in-game economies clear and sustainable. Each match, win, and asset have 
+                          real value, as it is facilitated by its indigenous $ARENA token that is used in transaction, 
+                          rewards, and staking within the platform.
+                        </p>
+                                               <p>
+                          We are not only visualizing gameplay, though; Arena Studio will be the home of the 
+                          competition, innovation, and development of the community. Through the high-speed and 
+                          low-cost blockchain infrastructure provided by Solana, we can guarantee smooth gaming 
+                          with features that allow scalability and equitability.
+                        </p>
                      </div>
                    </div>
 
@@ -169,9 +169,9 @@ const ComingSoonPage = () => {
                      </div>
                    </div>
 
-                   {/* Arena SOL Model Section */}
+                                       {/* Arena Studio Model Section */}
                    <div>
-                     <h3 className="text-2xl font-bold text-[#F4822F] mb-4 font-geist">Arena SOL in Web3 Gaming</h3>
+                                           <h3 className="text-2xl font-bold text-[#F4822F] mb-4 font-geist">Arena Studio in Web3 Gaming</h3>
                      <div className="space-y-4 text-gray-300 font-poppins">
                        <p>
                          Web3 gaming on Solana features the massively scalable metaverse games (e.g. Star 
@@ -199,10 +199,10 @@ const ComingSoonPage = () => {
                        </div>
                        
                        <p>
-                         In comparison to SOL Arena that has secured funding of 8.7M and has a more 
-                         stratified approach, Arena SOL removes entry obstacles. The players are not required to pay the cost of 
-                         NFTs, store huge files, or deal with complicated in-game economies. That strategically 
-                         makes Arena SOL a hyper-accessible and scalable competitor.
+                                                   In comparison to SOL Arena that has secured funding of 8.7M and has a more 
+                          stratified approach, Arena Studio removes entry obstacles. The players are not required to pay the cost of 
+                          NFTs, store huge files, or deal with complicated in-game economies. That strategically 
+                          makes Arena Studio a hyper-accessible and scalable competitor.
                        </p>
                      </div>
                    </div>
@@ -211,9 +211,9 @@ const ComingSoonPage = () => {
               
               {/* Download Button */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a 
-                  href="/images/ARENASOL WHITEPAPER.pdf" 
-                  download="Arena_SOL_Whitepaper.pdf"
+                                 <a 
+                   href="/images/ARENASOL WHITEPAPER.pdf" 
+                   download="Arena_Studio_Whitepaper.pdf"
                   className="bg-[#F4822F] hover:bg-[#E6731A] text-black font-bold py-4 px-8 rounded-[1.2rem] transition-all duration-200 font-play text-xl flex items-center gap-3 shadow-lg hover:shadow-xl"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
