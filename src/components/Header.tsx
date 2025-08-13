@@ -97,7 +97,9 @@ export function Header() {
         {/* Desktop Buy Button */}
         <div className="hidden lg:block">
           <a
-            href="#buy-arena"
+            href="https://pump.fun/coin/2nyCdwiEy2PWh5cNvCqjTinBC9HCAJJ15iRueM5xpump"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-8 px-6 py-2 border border-[#F4822F] rounded-full text-white font-medium hover:bg-[#F4822F] hover:text-[#191825] transition-colors z-10"
           >
             BUY $ARENA
@@ -156,7 +158,9 @@ export function Header() {
                 ))}
                 <li className="w-full text-center mt-8">
                   <a
-                    href="#buy-arena"
+                    href="https://pump.fun/coin/2nyCdwiEy2PWh5cNvCqjTinBC9HCAJJ15iRueM5xpump"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-block px-8 py-3 border border-[#F4822F] rounded-full text-white font-medium hover:bg-[#F4822F] hover:text-[#191825] transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >

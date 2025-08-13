@@ -14,10 +14,14 @@ const ArenaPowerUpSection = () => {
             Step into the arena and fight for 1v1 Match
           </p>
           <div className="w-full flex flex-col items-center group relative">
-            <button className="bg-black rounded-[1.2rem] px-6 sm:px-8 py-2 md:py-3 text-lg sm:text-xl md:text-2xl font-bold text-orange-500 shadow-lg hover:bg-orange-500 hover:text-black transition-colors duration-200 font-play w-auto min-w-[200px] sm:min-w-[220px] text-center mb-2 relative z-10">
-              Buy Now
-            </button>
-            <span className="text-[#d1d5db] text-base sm:text-lg font-poppins text-center w-full block transition-all duration-300 ease-out absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-20" style={{top: '0', left: '50%', transform: 'translateX(-50%)'}}>DexScreener</span>
+            <a href="https://pump.fun/coin/2nyCdwiEy2PWh5cNvCqjTinBC9HCAJJ15iRueM5xpump" target="_blank" rel="noopener noreferrer">
+              <button className="bg-black rounded-[1.2rem] px-6 sm:px-8 py-2 md:py-3 text-lg sm:text-xl md:text-2xl font-bold text-orange-500 shadow-lg hover:bg-orange-500 hover:text-black transition-colors duration-200 font-play w-auto min-w-[200px] sm:min-w-[220px] text-center mb-2 relative z-10">
+                Buy Now
+              </button>
+            </a>
+                         <a href="https://pump.fun/coin/2nyCdwiEy2PWh5cNvCqjTinBC9HCAJJ15iRueM5xpump" target="_blank" rel="noopener noreferrer">
+               <span className="text-[#d1d5db] text-base sm:text-lg font-poppins text-center w-full block transition-all duration-300 ease-out absolute opacity-0 group-hover:opacity-100 group-hover:translate-y-20 hover:text-orange-500 cursor-pointer" style={{top: '0', left: '50%', transform: 'translateX(-50%)'}}>pump.fun</span>
+             </a>
           </div>
         </div>
         {/* Right: Characters image group on brown bg */}
